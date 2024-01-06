@@ -1,15 +1,15 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-domain',
+  selector: 'app-application',
   template: `
     <p>
-      domain works!
+      application works!
     </p>
   `,
   styles: [
   ]
 })
-export class DomainComponent {
+export class ApplicationComponent {
 
 }

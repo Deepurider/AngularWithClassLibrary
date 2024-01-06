@@ -5,8 +5,14 @@
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "paths": {
+      "application": [
+        "dist/application"
+      ],
       "domain": [
         "dist/domain"
+      ],
+      "infrastructure": [
+        "dist/infrastructure"
       ]
     },
     "forceConsistentCasingInFileNames": true,

@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { DomainComponent } from './domain.component';
-
-
-
+import { HomeComponent } from './features/home/home.component';
 @NgModule({
   declarations: [
-    DomainComponent
+    DomainComponent,
+    HomeComponent
   ],
   imports: [
   ],
   exports: [
-    DomainComponent
+    DomainComponent,
+    HomeComponent
   ]
 })
 export class DomainModule { }

@@ -1,5 +1,5 @@
 import { Component, Inject } from '@angular/core';
-import { CONFIG_TOKEN, Config } from './tokens/tokens';
+import { API_TOKEN, CONFIG_TOKEN, Config, REPORTING_TOKEN } from './tokens/tokens';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +9,9 @@ import { CONFIG_TOKEN, Config } from './tokens/tokens';
 export class AppComponent {
   title = 'Project1';
 
-  constructor(@Inject(CONFIG_TOKEN) private config: Config) {
-    console.log(config.localUrl);
-  }
+  constructor(
+    @Inject(CONFIG_TOKEN) public config: Config,
+    @Inject(API_TOKEN) public apiConfig: Config,
+    @Inject(REPORTING_TOKEN) public reportingConfig: Config,
+  ) {}
 }
